@@ -31,5 +31,10 @@ public class Gaulois {
 		return "Gaulois [nom=" + nom + ", force=" + force + "]";
 	}
 	
+	public void frapper(Romain romain) {
+		System.out.println(nom + " envoie un grand ocup dans la mâchoire de " + romain.getNom());
+		romain.recevoirCoup(force / 3);
+		
+	}
 	
 }
